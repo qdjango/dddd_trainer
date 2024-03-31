@@ -69,7 +69,7 @@ class CacheData:
                 label = line_list[1]
             else:
                 filename = file
-                label = "_".join(filename.split("_")[:-1])
+                label = "_".join(filename.split("_")[0])
             if filename in error_files:
                 continue
             label = label.replace(" ", "")
